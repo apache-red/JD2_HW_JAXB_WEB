@@ -67,7 +67,6 @@ public class ConsoleShow  {
                 constructNewsParam();
                 sendAction(action);
                 consoleAnswer(CommandName.ADD_NEWS_COMMAND.toString(), responseParam.isRequestCompleted());
-                consoleShow(responseParam);
                 break;
             case 9:
                 action.put(COMMAND_NAME, CommandName.XJCE_GENERATION_COMMAND.toString());

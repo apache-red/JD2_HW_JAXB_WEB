@@ -6,6 +6,7 @@ import com.redcompany.red.jaxbcategory.ref.entity.service.RequestParam;
 import com.redcompany.red.jaxbcategory.ref.entity.service.ResponseParam;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,6 +18,7 @@ import java.util.HashMap;
 import static com.redcompany.red.jaxbcategory.ref.controller.util.RequestParameterName.*;
 import static com.redcompany.red.jaxbcategory.ref.service.util.ServiceConstantStorage.XML_FILE_PATH;
 
+@WebServlet("/Controller")
 public class Controller extends HttpServlet implements ActionConsole {
 
     private static final Controller instance = new Controller();
@@ -29,6 +31,7 @@ public class Controller extends HttpServlet implements ActionConsole {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println();
         super.doPost(req, resp);
     }
 

@@ -14,4 +14,28 @@
             <news_body>test body 2</news_body>
         </movie>
     </subcategory>
+    <subcategory id="2">
+        <movie id="1">
+            <title>21</title>
+            <director>21</director>
+            <date_of_issue>2012-11-11</date_of_issue>
+            <news_body>12321</news_body>
+        </movie>
+    </subcategory>
+    <subcategory id="3">
+        <movie id="1">
+            <title>44</title>
+            <director>44</director>
+            <date_of_issue>2015-11-12</date_of_issue>
+            <news_body>12</news_body>
+        </movie>
+    </subcategory>
+    <subcategory id="4">
+        <movie id="1">
+            <title>111111</title>
+            <director>111111</director>
+            <date_of_issue>1111-11-11</date_of_issue>
+            <news_body>11111</news_body>
+        </movie>
+    </subcategory>
 </category>

@@ -35,8 +35,8 @@ public class AddNewsService implements XMLService {
     @Override
     public ResponseParam doService(RequestParam param) throws JAXBException {
         writeToXMLFile(param);
-
-        return null;
+        responseParam.setRequestCompleted(true);
+        return responseParam;
     }
 
     private void writeToXMLFile(RequestParam param) throws JAXBException {
@@ -48,7 +48,6 @@ public class AddNewsService implements XMLService {
         idSubCategory = getIdSubcategory(file,context);
         preparationEntity(param, file, context, idSubCategory);
         writeToXMLFile(file,context);
-
     }
 
     private void  writeToXMLFile( File file, JAXBContext context) throws JAXBException {

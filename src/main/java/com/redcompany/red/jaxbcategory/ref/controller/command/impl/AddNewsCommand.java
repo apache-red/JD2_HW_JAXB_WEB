@@ -14,7 +14,6 @@ public class AddNewsCommand implements BasicCommand {
 
     @Override
     public ResponseParam performAction(RequestParam param) throws JAXBException {
-        String page = null;
         responseParam = AddNewsService.getInstance().doService(param);
         if (responseParam.isRequestCompleted()){
             responseParam.setPageNames(JspPageName.ADD_NEWS_PAGE);
