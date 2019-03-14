@@ -14,31 +14,25 @@ import static com.redcompany.red.jaxbcategory.ref.service.util.ServiceConstantSt
 
 public class AllNewsService implements XMLService {
 
-   private ResponseParam responseParam;
-   private Category category;
+    private ResponseParam responseParam = new ResponseParam();
+    private Category category;
 
     private static final AllNewsService instance = new AllNewsService();
 
     @Override
     public ResponseParam doService(RequestParam param) throws JAXBException {
-        responseParam = readXmlFile();
-
-
-        return null;
+        readXmlFile();
+        return responseParam;
     }
 
-    private ResponseParam readXmlFile() throws JAXBException {
+    private void readXmlFile() throws JAXBException {
         File file = new File(XML_FILE_PATH);
         JAXBContext context = null;
         context = JAXBContext.newInstance(JAXB_CONTEXT_PATH);
         Unmarshaller unmarshaller = null;
         unmarshaller = context.createUnmarshaller();
-
         category = (Category) unmarshaller.unmarshal(file);
         responseParam.setCategory(category);
-//
-//        ConsoleShow.getInstance().consoleShow(category);
-        return null;
     }
 
 

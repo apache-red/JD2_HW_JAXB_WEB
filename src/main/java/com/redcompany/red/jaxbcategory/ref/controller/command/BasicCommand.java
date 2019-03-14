@@ -1,11 +1,12 @@
 package com.redcompany.red.jaxbcategory.ref.controller.command;
 
 import com.redcompany.red.jaxbcategory.ref.entity.service.RequestParam;
+import com.redcompany.red.jaxbcategory.ref.entity.service.ResponseParam;
 
-import java.util.HashMap;
+import javax.xml.bind.JAXBException;
 
 public interface BasicCommand {
 
-    String performAction(RequestParam param) ;
+    ResponseParam performAction(RequestParam param) throws JAXBException;
 
 }
