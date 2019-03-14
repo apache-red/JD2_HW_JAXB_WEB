@@ -1,8 +1,12 @@
 package com.redcompany.red.jaxbcategory.ref.service;
 
 import com.redcompany.red.jaxbcategory.ref.entity.service.RequestParam;
+import com.redcompany.red.jaxbcategory.ref.entity.service.ResponseParam;
+
+import javax.xml.bind.JAXBException;
 
 public interface XMLService {
 
-    boolean doService(RequestParam param);
+    ResponseParam doService(RequestParam param) throws JAXBException;
+
 }

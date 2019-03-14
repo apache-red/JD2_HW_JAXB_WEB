@@ -1,6 +1,7 @@
 package com.redcompany.red.jaxbcategory.ref.service.impl;
 
 import com.redcompany.red.jaxbcategory.ref.entity.service.RequestParam;
+import com.redcompany.red.jaxbcategory.ref.entity.service.ResponseParam;
 import com.redcompany.red.jaxbcategory.ref.service.XMLService;
 import com.sun.codemodel.JCodeModel;
 import com.sun.tools.xjc.api.S2JJAXBModel;
@@ -13,23 +14,23 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.PrintStream;
 
-import static com.redcompany.red.jaxbcategory.ref.service.impl.util.ServiceConstantStorage.*;
+import static com.redcompany.red.jaxbcategory.ref.service.util.ServiceConstantStorage.*;
 
 public class XJCEGenerationService implements XMLService {
 
     private static final XJCEGenerationService instance = new XJCEGenerationService();
 
     @Override
-    public boolean doService(RequestParam param) {
+    public ResponseParam doService(RequestParam param) {
         if (checkFile(CHECK_FILE)== false){
             try {
                 generateFromSchema(new File(SCHEMA_FILE), ENTITY_PACKAGE_NAME, new File(TARGET_PATH));
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            return true;
+            return null;
         } else {
-            return false;
+            return null;
         }
     }
 

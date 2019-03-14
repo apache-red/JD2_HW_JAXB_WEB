@@ -48,6 +48,8 @@ public class ConsoleShow  {
     private void getInputData(int menuItem) {
         switch (menuItem) {
             case 1:
+                action.put(COMMAND_NAME, CommandName.ALLNEWS_COMMAND.toString());
+                sendAction(action);
                 break;
             case 9:
                 action.put(COMMAND_NAME, CommandName.XJCEGENERATION_COMMAND.toString());
