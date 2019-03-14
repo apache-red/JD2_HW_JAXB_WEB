@@ -11,9 +11,11 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.io.File;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -38,26 +40,36 @@ public class AddNewsService implements XMLService {
     }
 
     private void writeToXMLFile(RequestParam param) throws JAXBException {
-        int idSubCategory = 1;
+        int idSubCategory;
         File file = new File(XML_FILE_PATH);
         JAXBContext context = null;
         context = JAXBContext.newInstance(JAXB_CONTEXT_PATH);
+        readXMLFile(file,context);
         idSubCategory = getIdSubcategory(file,context);
-        Marshaller marshaller  = context.createMarshaller();
-        marshaller.marshal(  preparationEntity(param, file, context,idSubCategory), file);
+        preparationEntity(param, file, context, idSubCategory);
+        writeToXMLFile(file,context);
 
     }
 
+    private void  writeToXMLFile( File file, JAXBContext context) throws JAXBException {
+        Marshaller marshaller = context.createMarshaller();
+        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+        marshaller.marshal(category, file);
+    }
+
+    private void readXMLFile(File file, JAXBContext context) throws JAXBException {
+        Unmarshaller jaxbUnmarshaller = null;
+        jaxbUnmarshaller = context.createUnmarshaller();
+        category = (Category) jaxbUnmarshaller.unmarshal(file);
+    }
+
     private int getIdSubcategory( File file,  JAXBContext context) throws JAXBException {
-        Unmarshaller unmarshaller = null;
-        unmarshaller = context.createUnmarshaller();
-        category = (Category) unmarshaller.unmarshal(file);
         List<SubCategoryType> list = category.getSubcategory();
         return (list.size()+1);
     }
 
 
-    private SubCategoryType preparationEntity(RequestParam param, File file, JAXBContext context, int idSubCategory) throws JAXBException {
+    private void preparationEntity(RequestParam param, File file, JAXBContext context, int idSubCategory) throws JAXBException {
         String datefromString;
         HashMap<String, String> hashMapParam = param.getParam();
         SubCategoryType subCategoryType  = new SubCategoryType();
@@ -70,27 +82,19 @@ public class AddNewsService implements XMLService {
         movieType.setDateOfIssue(convertDateToXMLGregorianCalendar(datefromString));
         movieType.setNewsBody(hashMapParam.get("news_body"));
         subCategoryType.getMovie().add(movieType);
-        return subCategoryType;
+        category.getSubcategory().add(subCategoryType);
     }
 
 
     private XMLGregorianCalendar convertDateToXMLGregorianCalendar(String datefromString){
-        Date date = null;
+        XMLGregorianCalendar result = null;
         try {
-            date = new SimpleDateFormat( "yyyy.MM.dd" ).parse( datefromString );
-        } catch (ParseException e) {
+            result = DatatypeFactory.newInstance()
+                    .newXMLGregorianCalendar(datefromString);
+        } catch (DatatypeConfigurationException e) {
             e.printStackTrace();
         }
-        XMLGregorianCalendar xmlDate = null;
-        GregorianCalendar gc = new GregorianCalendar();
-        gc.setTime(date);
-
-        try{
-            xmlDate = DatatypeFactory.newInstance().newXMLGregorianCalendar(gc);
-        }catch(Exception e){
-            e.printStackTrace();
-        }
-        return xmlDate;
+        return result;
     }
 
     public static AddNewsService getInstance() {

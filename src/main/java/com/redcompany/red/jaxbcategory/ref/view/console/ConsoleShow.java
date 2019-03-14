@@ -122,7 +122,7 @@ public class ConsoleShow  {
         action.put("title", readMenuItemString());
         System.out.println("Add director:");
         action.put("director", readMenuItemString());
-        System.out.println("Add date_of_issue (Format dd.MM.yyyy):");
+        System.out.println("Add date_of_issue (Format yyyy-MM-dd):");
         action.put("date_of_issue", readMenuItemString());
         System.out.println("Add news_body:");
         action.put("news_body", readMenuItemString());
