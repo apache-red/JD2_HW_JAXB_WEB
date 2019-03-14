@@ -4,22 +4,21 @@ import com.redcompany.red.jaxbcategory.ref.controller.command.BasicCommand;
 import com.redcompany.red.jaxbcategory.ref.controller.util.JspPageName;
 import com.redcompany.red.jaxbcategory.ref.entity.service.RequestParam;
 import com.redcompany.red.jaxbcategory.ref.entity.service.ResponseParam;
-import com.redcompany.red.jaxbcategory.ref.service.impl.AllNewsService;
-import com.redcompany.red.jaxbcategory.ref.service.impl.XJCEGenerationService;
+import com.redcompany.red.jaxbcategory.ref.service.impl.AddNewsService;
 
-public class XJCEGenCommand implements BasicCommand {
+import javax.xml.bind.JAXBException;
+
+public class AddNewsCommand implements BasicCommand {
 
     private ResponseParam responseParam;
+
     @Override
-    public ResponseParam performAction(RequestParam param) {
-
-
+    public ResponseParam performAction(RequestParam param) throws JAXBException {
         String page = null;
-        responseParam = XJCEGenerationService.getInstance().doService(param);;
+        responseParam = AddNewsService.getInstance().doService(param);
         if (responseParam.isRequestCompleted()){
-            responseParam.setPageNames(JspPageName.XJCE_GENERATION_PAGE);
+            responseParam.setPageNames(JspPageName.ADD_NEWS_PAGE);
         }
         return responseParam;
     }
-
 }

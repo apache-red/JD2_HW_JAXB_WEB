@@ -28,10 +28,12 @@ public class ConsoleShow  {
         }
     }
     private void showBasicMenu() {
+        System.out.println("____________________");
         System.out.println("1 - Show All News");
         System.out.println("2 - Add News");
         System.out.println("9 - Generate Entity from XML (Edit pom.xml)");
         System.out.println("0 - Exit");
+        System.out.println("____________________");
     }
 
     private void readUserInput() {
@@ -55,12 +57,20 @@ public class ConsoleShow  {
     private void getInputData(int menuItem) {
         switch (menuItem) {
             case 1:
-                action.put(COMMAND_NAME, CommandName.ALLNEWS_COMMAND.toString());
+                action.put(COMMAND_NAME, CommandName.ALL_NEWS_COMMAND.toString());
                 sendAction(action);
+                consoleAnswer(CommandName.ALL_NEWS_COMMAND.toString(), responseParam.isRequestCompleted());
+                consoleShow(responseParam);
+                break;
+            case 2:
+                action.put(COMMAND_NAME, CommandName.ADD_NEWS_COMMAND.toString());
+                constructNewsParam();
+                sendAction(action);
+                consoleAnswer(CommandName.ADD_NEWS_COMMAND.toString(), responseParam.isRequestCompleted());
                 consoleShow(responseParam);
                 break;
             case 9:
-                action.put(COMMAND_NAME, CommandName.XJCEGENERATION_COMMAND.toString());
+                action.put(COMMAND_NAME, CommandName.XJCE_GENERATION_COMMAND.toString());
                 sendAction(action);
                 break;
             case 0:
@@ -93,5 +103,35 @@ public class ConsoleShow  {
             System.out.println("JAXBException: Console");
             //logger
         }
+    }
+
+    private void consoleAnswer(String param, boolean answer) {
+        if (answer == true) {
+            System.out.println("Action: " + param + " was successful");
+            System.out.println("______________________________________");
+        } else {
+            System.out.println("Action: " + param + " was not successful! Try Again!");
+            System.out.println("______________________________________");
+        }
+    }
+
+
+    private void constructNewsParam(){
+        action.put("param", CommandName.ADD_NEWS_COMMAND.toString());
+        System.out.println("Add title:");
+        action.put("title", readMenuItemString());
+        System.out.println("Add director:");
+        action.put("director", readMenuItemString());
+        System.out.println("Add date_of_issue (Format dd.MM.yyyy):");
+        action.put("date_of_issue", readMenuItemString());
+        System.out.println("Add news_body:");
+        action.put("news_body", readMenuItemString());
+    }
+
+    private String readMenuItemString() {
+        System.out.print("Input field: ");
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        return str;
     }
 }

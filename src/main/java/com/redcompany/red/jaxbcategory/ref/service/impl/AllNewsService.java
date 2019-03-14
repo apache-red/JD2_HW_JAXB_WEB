@@ -22,6 +22,7 @@ public class AllNewsService implements XMLService {
     @Override
     public ResponseParam doService(RequestParam param) throws JAXBException {
         readXmlFile();
+        responseParam.setRequestCompleted(true);
         return responseParam;
     }
 

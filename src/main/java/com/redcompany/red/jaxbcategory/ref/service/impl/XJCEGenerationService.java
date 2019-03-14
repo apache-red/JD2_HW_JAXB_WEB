@@ -19,14 +19,18 @@ import static com.redcompany.red.jaxbcategory.ref.service.util.ServiceConstantSt
 public class XJCEGenerationService implements XMLService {
 
     private static final XJCEGenerationService instance = new XJCEGenerationService();
+    private ResponseParam responseParam = new ResponseParam();
 
     @Override
     public ResponseParam doService(RequestParam param) {
         if (checkFile(CHECK_FILE)== false){
             try {
                 generateFromSchema(new File(SCHEMA_FILE), ENTITY_PACKAGE_NAME, new File(TARGET_PATH));
+                responseParam.setRequestCompleted(true);
             } catch (Exception e) {
+                //create oun exeption
                 e.printStackTrace();
+                System.out.println("XJCEGenerationExeption");
             }
             return null;
         } else {
