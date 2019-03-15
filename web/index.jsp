@@ -11,12 +11,14 @@
     <title>$Title$</title>
   </head>
   <body>
-  <li><a href="jsp/AddNewsPage.jsp">Add News </a></li>
-
-
+  <li><a href="/jsp/AddNewsPage.jsp">Add News </a></li>
+  <form action="controller" method="post">
+    <input type="hidden" name="command" value="all_news_command"/>
+    <input type="submit" value="show all news"/>
+  </form>
   Create News:
-  <form action="Controller" method="post">
-    <input type="hidden" name="action" value="add_news_command"/>
+  <form action="controller" method="post">
+    <input type="hidden" name="command" value="add_news_command"/>
     <input type="text" name="title" /><br>
     <input type="text" name="director" /><br>
     <input type="date" name="date"/><br>

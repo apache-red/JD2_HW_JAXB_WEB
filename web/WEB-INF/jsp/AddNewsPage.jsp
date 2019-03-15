@@ -13,7 +13,7 @@
 <body>
 Create News:
 <form action="Controller" method="post">
-    <input type="hidden" name="action" value="add_news_command"/>
+    <input type="hidden" name="command" value="add_news_command"/>
     <input type="text" name="title" /><br>
     <input type="text" name="director" /><br>
     <input type="date" name="date"/><br>
