@@ -11,12 +11,13 @@
     <title>$Title$</title>
   </head>
   <body>
-  <li><a href="/jsp/AddNewsPage.jsp">Add News </a></li>
+  <h3>Show ALL News:</h3>
   <form action="controller" method="post">
     <input type="hidden" name="command" value="all_news_command"/>
     <input type="submit" value="show all news"/>
   </form>
-  Create News:
+  <br>
+  <h3>Create News:</h3>
   <form action="controller" method="post">
     <input type="hidden" name="command" value="add_news_command"/>
     <input type="text" name="title" /><br>
@@ -24,6 +25,17 @@
     <input type="date" name="date"/><br>
     <input type="text" name="news_body" /><br>
     <input type="submit" value="add news"/>
+  </form>
+  <br>
+  <h3>Find News:</h3>
+  <h3>Enter search query or leave blank</h3>
+  <form action="controller" method="post">
+    <input type="hidden" name="command" value="find_news_command"/>
+    <input type="text" name="title" /><br>
+    <input type="text" name="director" /><br>
+    <input type="date" name="date"/><br>
+    <input type="text" name="news_body" /><br>
+    <input type="submit" value="find news"/>
   </form>
   </body>
 </html>

@@ -16,17 +16,9 @@
     </subcategory>
     <subcategory id="2">
         <movie id="1">
-            <title>test</title>
-            <director>test</director>
-            <date_of_issue>2019-03-13</date_of_issue>
-            <news_body>Text</news_body>
-        </movie>
-    </subcategory>
-    <subcategory id="3">
-        <movie id="1">
-            <title>test</title>
-            <director>test</director>
-            <date_of_issue>2019-03-13</date_of_issue>
+            <title>Title</title>
+            <director>Director</director>
+            <date_of_issue>2019-03-01</date_of_issue>
             <news_body>Text</news_body>
         </movie>
     </subcategory>

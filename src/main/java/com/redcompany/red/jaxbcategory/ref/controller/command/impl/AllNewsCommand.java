@@ -17,6 +17,7 @@ public class AllNewsCommand implements BasicCommand {
         String page = null;
         responseParam =AllNewsService.getInstance().doService(param);
         if (responseParam.isRequestCompleted()){
+            responseParam.setShowResult(true);
             responseParam.setPageNames(JspPageName.ALL_NEWS_PAGE);
         }
         return responseParam;

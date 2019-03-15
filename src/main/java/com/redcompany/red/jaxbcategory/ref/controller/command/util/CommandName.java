@@ -6,5 +6,7 @@ public enum CommandName {
     NO_SUCH_PARAM,
     XJCE_GENERATION_COMMAND,
     ALL_NEWS_COMMAND,
-    ADD_NEWS_COMMAND;
+    ADD_NEWS_COMMAND,
+    FIND_NEWS_COMMAND;
+
 }

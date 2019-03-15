@@ -4,20 +4,19 @@ import com.redcompany.red.jaxbcategory.ref.controller.command.BasicCommand;
 import com.redcompany.red.jaxbcategory.ref.controller.util.JspPageName;
 import com.redcompany.red.jaxbcategory.ref.entity.service.RequestParam;
 import com.redcompany.red.jaxbcategory.ref.entity.service.ResponseParam;
-import com.redcompany.red.jaxbcategory.ref.service.impl.AddNewsService;
+import com.redcompany.red.jaxbcategory.ref.service.impl.FindNewsService;
 
 import javax.xml.bind.JAXBException;
 
-public class AddNewsCommand implements BasicCommand {
-
+public class FindNewsCommand implements BasicCommand {
     private ResponseParam responseParam;
 
     @Override
     public ResponseParam performAction(RequestParam param) throws JAXBException {
-
-        responseParam = AddNewsService.getInstance().doService(param);
+        responseParam = FindNewsService.getInstance().doService(param);
         if (responseParam.isRequestCompleted()){
-            responseParam.setPageNames(JspPageName.ADD_NEWS_PAGE);
+            responseParam.setShowResult(true);
+            responseParam.setPageNames(JspPageName.FIND_NEWS_PAGE);
         }
         return responseParam;
     }

@@ -61,7 +61,7 @@ public class Controller extends HttpServlet implements ActionConsole {
             System.out.println("Exception: WEB");
             //logger
         }
-        if(!responseParam.getCRUD()){
+        if(responseParam.getShowResult()){
             req.setAttribute("SubCategories", responseParam.getCategory().getSubcategory());
         }
         RequestDispatcher dispatcher = req.getRequestDispatcher(page);

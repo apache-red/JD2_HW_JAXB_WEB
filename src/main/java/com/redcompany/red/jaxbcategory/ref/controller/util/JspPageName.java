@@ -8,6 +8,8 @@ public class JspPageName {
     public static final String ALL_NEWS_PAGE= "WEB-INF/jsp/AllNewsPage.jsp";
     public static final String ADD_NEWS_PAGE= "WEB-INF/jsp/AddNewsPage.jsp";
     public static final String XJCE_GENERATION_PAGE= "WEB-INF/jsp/XJCEGenerationPage.jsp";
+
+    public static final String FIND_NEWS_PAGE= "WEB-INF/jsp/FindNewsPag.jsp";
     public static final String ERROR_PAGE = "WEB-INF/jsp/errorPage.jsp";
 
 

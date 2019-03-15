@@ -7,18 +7,18 @@ public class ResponseParam {
     private Category category;
     private String pageNames;
     private boolean isRequestCompleted = false;
-    private Boolean isCRUD = false;
+    private Boolean showResult = false;
 
     public ResponseParam() {
 
     }
 
-    public Boolean getCRUD() {
-        return isCRUD;
+    public Boolean getShowResult() {
+        return showResult;
     }
 
-    public void setCRUD(Boolean CRUD) {
-        isCRUD = CRUD;
+    public void setShowResult(Boolean showResult) {
+        this.showResult = showResult;
     }
 
     public boolean isRequestCompleted() {

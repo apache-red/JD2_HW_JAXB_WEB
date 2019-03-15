@@ -17,6 +17,7 @@ public class CommandManager  {
         commands.put(CommandName.XJCE_GENERATION_COMMAND, new XJCEGenCommand());
         commands.put(CommandName.ALL_NEWS_COMMAND, new AllNewsCommand());
         commands.put(CommandName.ADD_NEWS_COMMAND, new AddNewsCommand());
+        commands.put(CommandName.FIND_NEWS_COMMAND, new FindNewsCommand());
 
     }
 
