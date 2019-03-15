@@ -14,4 +14,18 @@
             <news_body>test body 2</news_body>
         </movie>
     </subcategory>
+    <subcategory id="2">
+        <movie id="1">
+            <title>Title</title>
+            <director>Director</director>
+            <date_of_issue>2019-03-01</date_of_issue>
+            <news_body>Text</news_body>
+        </movie>
+        <movie id="2">
+            <title>Film_1</title>
+            <director>Director_2</director>
+            <date_of_issue>2002-09-24</date_of_issue>
+            <news_body>test body 1</news_body>
+        </movie>
+    </subcategory>
 </category>

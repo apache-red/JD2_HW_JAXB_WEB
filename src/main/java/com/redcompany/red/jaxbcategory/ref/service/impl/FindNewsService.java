@@ -50,6 +50,7 @@ public class FindNewsService implements XMLService {
                 movieType = movieTypeList.get(j);
                 if (findParamInMovie(movieType) != true){
                     movieTypeList.remove(movieType);
+                    j-=1;
                 }
             }
         }
@@ -69,9 +70,9 @@ public class FindNewsService implements XMLService {
             current = movieType.getDirector();
             result = current.equals(searchParam.get("director")) == true? true:false;
         }
-        if (keySet.contains("date")) {
+        if (keySet.contains("date_of_issue")) {
             current = movieType.getDateOfIssue().toString();
-            result = current.equals(searchParam.get("date")) == true? true:false;
+            result = current.equals(searchParam.get("date_of_issue")) == true? true:false;
         }
         if (keySet.contains("news_body")) {
             current = movieType.getNewsBody();

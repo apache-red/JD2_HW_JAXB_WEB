@@ -7,19 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f89ecd-3722-4499-b946-ac11e7e88c9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/impl/FindNewsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/service/impl/FindNewsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/FindNewsPag.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/impl/AddNewsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/impl/AddNewsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/impl/AllNewsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/impl/AllNewsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/util/CommandName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/util/CommandName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/util/JspPageName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/util/JspPageName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/entity/service/ResponseParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/entity/service/ResponseParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/service/impl/FindNewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/service/impl/FindNewsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/data/category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/category.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/redcompany/red/jaxbcategory/ref/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/redcompany/red/jaxbcategory/ref/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/redcompany/red/jaxbcategory/ref/controller/command/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/redcompany/red/jaxbcategory/ref/controller/command/CommandManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/redcompany/red/jaxbcategory/ref/controller/command/util/CommandName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/redcompany/red/jaxbcategory/ref/controller/command/util/CommandName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/category.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/jsp/FindNewsPag.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/FindNewsPag.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,85 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/service/impl/FindNewsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3830#3831#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/entity/service/ResponseParam.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
-              <folding>
-                <element signature="e#374#375#0" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#460#461#0" expanded="true" />
-                <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#653#654#0" expanded="true" />
-                <element signature="e#706#707#0" expanded="true" />
-                <element signature="e#983#984#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="36" column="38" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/FindNewsPag.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/impl/AllNewsCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/service/impl/AllNewsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1423#1424#0" expanded="true" />
-                <element signature="e#1454#1455#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="169">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,10 +39,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/AllNewsPage.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/service/impl/FindNewsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="14" selection-start-line="14" selection-end-line="37" selection-end-column="72" />
+            <state relative-caret-position="81">
+              <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3799#3800#0" expanded="true" />
+                <element signature="e#3830#3831#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,10 +65,68 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/entity/service/ResponseParam.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="e#374#375#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#653#654#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#824#825#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
+                <element signature="e#1025#1026#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/FindNewsPag.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="30" column="43" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/entity/MovieType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
+              <folding>
+                <element signature="e#2039#2040#0" expanded="true" />
+                <element signature="e#2067#2068#0" expanded="true" />
+                <element signature="e#2491#2492#0" expanded="true" />
+                <element signature="e#2522#2523#0" expanded="true" />
+                <element signature="e#3023#3024#0" expanded="true" />
+                <element signature="e#3262#3263#0" expanded="true" />
+                <element signature="e#3302#3303#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/entity/SubCategoryType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/data/category.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="660">
+              <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -209,11 +192,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/impl/AddNewsCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/impl/AllNewsCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/data/category.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/service/impl/AllNewsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/impl/FindNewsCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/service/impl/FindNewsService.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/jsp/FindNewsPag.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/data/category.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/service/impl/FindNewsService.java" />
       </list>
     </option>
   </component>
@@ -476,7 +459,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552671768753" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552676423480" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -628,7 +611,7 @@
       <updated>1552493302610</updated>
       <workItem from="1552493306860" duration="10892000" />
       <workItem from="1552571496629" duration="23700000" />
-      <workItem from="1552637818625" duration="27373000" />
+      <workItem from="1552637818625" duration="31439000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1552504750072</created>
@@ -679,11 +662,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552653654601</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add find news v0.8">
+      <created>1552671822859</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1552671822859</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61965000" />
+    <option name="totallyTimeSpent" value="66031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
@@ -700,8 +690,8 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3283582" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3233831" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3840796" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3273632" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.18109453" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -736,16 +726,17 @@
     <MESSAGE value="add news v0.95" />
     <MESSAGE value="add web" />
     <MESSAGE value="add WEB command show all and other." />
-    <option name="LAST_COMMIT_MESSAGE" value="add WEB command show all and other." />
+    <MESSAGE value="add find news v0.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="add find news v0.8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/service/impl/FindNewsService.java</url>
-          <line>39</line>
+          <line>72</line>
           <properties />
-          <option name="timeStamp" value="51" />
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -865,35 +856,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/entity/ObjectFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/entity/SubCategoryType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="67" column="17" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/entity/MovieType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="52" column="29" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="29" />
-          <folding>
-            <element signature="e#3262#3263#0" expanded="true" />
-            <element signature="e#3302#3303#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,13 +975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data/category.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/command/impl/AllNewsCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1038,29 +997,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/service/impl/FindNewsService.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/AllNewsPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="176">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/FindNewsPag.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/entity/SubCategoryType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/entity/MovieType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3830#3831#0" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2067#2068#0" expanded="true" />
+            <element signature="e#2491#2492#0" expanded="true" />
+            <element signature="e#2522#2523#0" expanded="true" />
+            <element signature="e#3023#3024#0" expanded="true" />
+            <element signature="e#3262#3263#0" expanded="true" />
+            <element signature="e#3302#3303#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/entity/service/ResponseParam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="53">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#374#375#0" expanded="true" />
             <element signature="e#407#408#0" expanded="true" />
             <element signature="e#460#461#0" expanded="true" />
             <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
             <element signature="e#653#654#0" expanded="true" />
             <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
             <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1077,25 +1073,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="169">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/AllNewsPage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redcompany/red/jaxbcategory/ref/service/impl/FindNewsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="14" selection-start-line="14" selection-end-line="37" selection-end-column="72" />
+        <state relative-caret-position="81">
+          <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3799#3800#0" expanded="true" />
+            <element signature="e#3830#3831#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/FindNewsPag.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/category.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="660">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
         </state>
       </provider>
     </entry>
