@@ -36,4 +36,12 @@
             <news_body>HelloDirectorText</news_body>
         </movie>
     </subcategory>
+    <subcategory id="4">
+        <movie id="1">
+            <title>Title</title>
+            <director>Director_22</director>
+            <date_of_issue>2019-03-27</date_of_issue>
+            <news_body>ÑÐµÐºÑÑ</news_body>
+        </movie>
+    </subcategory>
 </category>
